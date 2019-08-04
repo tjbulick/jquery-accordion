@@ -21,6 +21,12 @@
 		</dl>
 	</div>
 
+	<style>
+		.accordion .active {
+			color: red;
+		}
+	</style>
+
 	<script>
 		$('.accordion dd').hide().prev().click(() => {
 			$(this).parents('.accordion').find('dd').not(this).slideUp().prev().removeClass('active');
