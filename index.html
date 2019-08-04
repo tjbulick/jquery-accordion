@@ -20,5 +20,12 @@
 			<dd>Nemo iste earum vel vero quo dolor, iusto maxime, eaque suscipit, eos temporibus harum reprehenderit consequatur rem cumque recusandae molestias praesentium pariatur molestiae provident qui repellat modi. Laborum, consectetur, veniam.</dd>
 		</dl>
 	</div>
+
+	<script>
+		$('.accordion dd').hide().prev().click(() => {
+			$(this).parents('.accordion').find('dd').not(this).slideUp().prev().removeClass('active');
+			$(this).next().not(':visible').slideDown().prev().addClass('active');
+		})
+	</script>
 </body>
 </html>
