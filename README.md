@@ -1,4 +1,4 @@
-A small accordion snippet of accordion menu.
+A small code snippet of accordion menu.
 
 All code is contained in one file.
 
